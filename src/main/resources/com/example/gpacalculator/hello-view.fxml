@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="551.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpacalculator.HelloController">
+   <children>
+      <ImageView fx:id="AASTLogo" fitHeight="93.0" fitWidth="105.0" layoutX="401.0" layoutY="18.0">
+         <image>
+            <Image url="@AAST.jpg" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <Button layoutX="179.0" layoutY="423.0" mnemonicParsing="false" onAction="#clickCalculate" prefHeight="42.0" prefWidth="336.0" style="-fx-border-style: solid; -fx-border-color: transparent; -fx-background-radius: 10; -fx-background-color: #f94c57;" text="Calculate" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="LabelCurrentGPA" layoutX="370.0" layoutY="176.0" prefHeight="26.0" prefWidth="96.0" text="Current GPA:">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="LabelTotalCreditHours" layoutX="370.0" layoutY="233.0" prefHeight="26.0" prefWidth="136.0" text="Total credit hours:">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="course4_grade" layoutX="154.0" layoutY="228.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <TextField fx:id="course3_grade" layoutX="154.0" layoutY="177.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <TextField fx:id="course5_grade" layoutX="154.0" layoutY="281.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <TextField fx:id="course6_grade" layoutX="154.0" layoutY="328.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <TextField fx:id="course7_grade" layoutX="154.0" layoutY="378.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <TextField fx:id="course2_grade" layoutX="154.0" layoutY="128.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <TextField fx:id="course1_grade" layoutX="154.0" layoutY="76.0" prefHeight="26.0" prefWidth="51.0" text="0" />
+      <ComboBox fx:id="course1_credit" layoutX="244.0" layoutY="77.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <ComboBox fx:id="course4_credit" layoutX="244.0" layoutY="229.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <ComboBox fx:id="course3_credit" layoutX="244.0" layoutY="178.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <ComboBox fx:id="course2_credit" layoutX="244.0" layoutY="129.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <ComboBox fx:id="course5_credit" layoutX="244.0" layoutY="282.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <ComboBox fx:id="course6_credit" layoutX="244.0" layoutY="329.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <ComboBox fx:id="course7_credit" layoutX="244.0" layoutY="379.0" prefHeight="26.0" prefWidth="67.0" visibleRowCount="3" />
+      <TextField fx:id="CurrentGPA" layoutX="370.0" layoutY="201.0" prefHeight="26.0" prefWidth="136.0" />
+      <TextField fx:id="TotalCreditHours" layoutX="370.0" layoutY="259.0" prefHeight="26.0" prefWidth="136.0" />
+      <Label fx:id="LabelPoints" layoutX="154.0" layoutY="35.0" prefHeight="26.0" prefWidth="51.0" text="Points">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelCreditHours" layoutX="233.0" layoutY="35.0" prefHeight="26.0" prefWidth="89.0" text="Credit hours">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="EmptyGPA" layoutX="506.0" layoutY="192.0" prefHeight="0.0" prefWidth="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="EmptyCreditHours" layoutX="506.0" layoutY="250.0" prefHeight="0.0" prefWidth="0.0" text="*" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade1" layoutX="323.0" layoutY="77.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade2" layoutX="323.0" layoutY="128.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade3" layoutX="323.0" layoutY="178.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade4" layoutX="323.0" layoutY="228.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade5" layoutX="323.0" layoutY="280.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade6" layoutX="323.0" layoutY="328.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="LetterGrade7" layoutX="323.0" layoutY="378.0" prefHeight="26.0" prefWidth="26.0" text="A+" textFill="#091d38">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkCourse1" layoutX="46.0" layoutY="81.0" mnemonicParsing="false" onAction="#setCredits" text="Course 1">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkCourse2" layoutX="46.0" layoutY="132.0" mnemonicParsing="false" onAction="#setCredits" text="Course 2">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkCourse3" layoutX="46.0" layoutY="181.0" mnemonicParsing="false" onAction="#setCredits" text="Course 3">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkCourse4" layoutX="46.0" layoutY="233.0" mnemonicParsing="false" onAction="#setCredits" text="Course 4">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkCourse5" layoutX="46.0" layoutY="285.0" mnemonicParsing="false" onAction="#setCredits" text="Course 5">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkCourse6" layoutX="46.0" layoutY="333.0" mnemonicParsing="false" onAction="#setCredits" text="Course 6">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkCourse7" layoutX="46.0" layoutY="382.0" mnemonicParsing="false" onAction="#setCredits" text="Course 7">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font></CheckBox>
+      <Label fx:id="LatestGPA" layoutX="370.0" layoutY="301.0" text="Label" textFill="#cf0a0a">
+         <font>
+            <Font name="Segoe UI Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="36.0" layoutY="423.0" mnemonicParsing="false" onAction="#clickTable" prefHeight="42.0" prefWidth="119.0" style="-fx-border-style: solid; -fx-border-color: transparent; -fx-background-radius: 10; -fx-background-color: #091d38;" text="Grades Table" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="darkMode" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#clickDarkMode" text="Dark mode" textOverrun="CLIP">
+         <font>
+            <Font name="Segoe UI Bold" size="10.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
